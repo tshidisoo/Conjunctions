@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjunction Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Conjunction Quiz</h1>
+            <p>Test your knowledge of <strong>with, and, or, because, but</strong></p>
+        </header>
+
+        <div class="quiz-info">
+            <div class="score-display">
+                <span>Score: <span id="score">0</span>/20</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+            <!-- Part A: Fill in the blanks -->
+            <section class="quiz-section">
+                <h2>✅ Part A: Fill in the blanks (10 Marks)</h2>
+                <p class="instruction">Complete each sentence with the correct conjunction: <strong>with, and, or, because, but</strong></p>
+                
+                <div class="question" data-answer="and">
+                    <p><span class="question-number">1.</span> I like swimming <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> running in the morning.</p>
+                </div>
+
+                <div class="question" data-answer="but">
+                    <p><span class="question-number">2.</span> She wanted to go to the park, <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> it started raining.</p>
+                </div>
+
+                <div class="question" data-answer="or">
+                    <p><span class="question-number">3.</span> Do you want rice <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> potatoes for lunch?</p>
+                </div>
+
+                <div class="question" data-answer="because">
+                    <p><span class="question-number">4.</span> He didn't come to school <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> he was sick.</p>
+                </div>
+
+                <div class="question" data-answer="with">
+                    <p><span class="question-number">5.</span> I went to the concert <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> my cousins.</p>
+                </div>
+
+                <div class="question" data-answer="and">
+                    <p><span class="question-number">6.</span> She is kind <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> helpful to everyone.</p>
+                </div>
+
+                <div class="question" data-answer="or">
+                    <p><span class="question-number">7.</span> You can take the bus <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> walk if you prefer.</p>
+                </div>
+
+                <div class="question" data-answer="because">
+                    <p><span class="question-number">8.</span> I wore a jacket <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> it was cold outside.</p>
+                </div>
+
+                <div class="question" data-answer="but">
+                    <p><span class="question-number">9.</span> He is tall <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> not very strong.</p>
+                </div>
+
+                <div class="question" data-answer="with">
+                    <p><span class="question-number">10.</span> They baked cookies <select class="answer-select">
+                        <option value="">Choose...</option>
+                        <option value="with">with</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="because">because</option>
+                        <option value="but">but</option>
+                    </select> milk chocolate.</p>
+                </div>
+            </section>
+
+            <!-- Part B: Multiple Choice -->
+            <section class="quiz-section">
+                <h2>✅ Part B: Multiple Choice Questions (10 Marks)</h2>
+                <p class="instruction">Choose the correct conjunction for each sentence.</p>
+
+                <div class="question" data-answer="and">
+                    <p><span class="question-number">11.</span> I want to buy apples ______ oranges.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q11" value="because"> A. because</label>
+                        <label><input type="radio" name="q11" value="and"> B. and</label>
+                        <label><input type="radio" name="q11" value="or"> C. or</label>
+                        <label><input type="radio" name="q11" value="but"> D. but</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="because">
+                    <p><span class="question-number">12.</span> He missed the meeting ______ he overslept.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q12" value="but"> A. but</label>
+                        <label><input type="radio" name="q12" value="and"> B. and</label>
+                        <label><input type="radio" name="q12" value="or"> C. or</label>
+                        <label><input type="radio" name="q12" value="because"> D. because</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="or">
+                    <p><span class="question-number">13.</span> Would you like tea ______ coffee?</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q13" value="and"> A. and</label>
+                        <label><input type="radio" name="q13" value="but"> B. but</label>
+                        <label><input type="radio" name="q13" value="or"> C. or</label>
+                        <label><input type="radio" name="q13" value="with"> D. with</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="and">
+                    <p><span class="question-number">14.</span> She is smart ______ creative.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q14" value="because"> A. because</label>
+                        <label><input type="radio" name="q14" value="or"> B. or</label>
+                        <label><input type="radio" name="q14" value="and"> C. and</label>
+                        <label><input type="radio" name="q14" value="but"> D. but</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="but">
+                    <p><span class="question-number">15.</span> I wanted to go out, ______ it was too late.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q15" value="because"> A. because</label>
+                        <label><input type="radio" name="q15" value="and"> B. and</label>
+                        <label><input type="radio" name="q15" value="or"> C. or</label>
+                        <label><input type="radio" name="q15" value="but"> D. but</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="with">
+                    <p><span class="question-number">16.</span> He painted the room ______ a brush.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q16" value="with"> A. with</label>
+                        <label><input type="radio" name="q16" value="or"> B. or</label>
+                        <label><input type="radio" name="q16" value="and"> C. and</label>
+                        <label><input type="radio" name="q16" value="because"> D. because</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="or">
+                    <p><span class="question-number">17.</span> You must finish your homework ______ you can't watch TV.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q17" value="with"> A. with</label>
+                        <label><input type="radio" name="q17" value="because"> B. because</label>
+                        <label><input type="radio" name="q17" value="or"> C. or</label>
+                        <label><input type="radio" name="q17" value="and"> D. and</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="because">
+                    <p><span class="question-number">18.</span> I'm hungry ______ I didn't eat lunch.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q18" value="or"> A. or</label>
+                        <label><input type="radio" name="q18" value="but"> B. but</label>
+                        <label><input type="radio" name="q18" value="because"> C. because</label>
+                        <label><input type="radio" name="q18" value="with"> D. with</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="and">
+                    <p><span class="question-number">19.</span> They brought snacks ______ drinks for the picnic.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q19" value="or"> A. or</label>
+                        <label><input type="radio" name="q19" value="and"> B. and</label>
+                        <label><input type="radio" name="q19" value="but"> C. but</label>
+                        <label><input type="radio" name="q19" value="because"> D. because</label>
+                    </div>
+                </div>
+
+                <div class="question" data-answer="but">
+                    <p><span class="question-number">20.</span> He studied hard, ______ he still failed the exam.</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="q20" value="or"> A. or</label>
+                        <label><input type="radio" name="q20" value="and"> B. and</label>
+                        <label><input type="radio" name="q20" value="with"> C. with</label>
+                        <label><input type="radio" name="q20" value="but"> D. but</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="quiz-controls">
+            <button id="checkAnswers" class="btn btn-primary">Check Answers</button>
+            <button id="resetQuiz" class="btn btn-secondary">Reset Quiz</button>
+        </div>
+
+        <div id="results" class="results hidden">
+            <h3>Quiz Results</h3>
+            <div id="finalScore"></div>
+            <div id="feedback"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
